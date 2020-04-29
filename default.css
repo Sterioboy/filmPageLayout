@@ -1,0 +1,24 @@
+body {
+	background-color: #f2f2f2;
+	font-family: 'PT Serif', serif;
+}
+
+#body1 {
+	display: none;
+}
+
+.video {
+	background-color: #f2f2f2
+}
+
+.lite-description {
+	background-color: #DBDCDC
+}
+
+.video1 {
+	background-color: #DBDCDC
+}
+
+.lite-description1 {
+	background-color: #f2f2f2
+}

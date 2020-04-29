@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Font Awesome Script-->
+    <script src="https://kit.fontawesome.com/13bcfb69b0.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Doc -->
+    <link rel="stylesheet" href="default.css">
+
+    <!--jQuery-->
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+
+    <title>Layout Page</title>
+</head>
+<body>
+    <header>
+        <!-- NavBar Beta -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                
+                <!--Home <Active>-->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <!--Link-->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+
+                <!--Dropdown-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+
+                <!--Disabled-->
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+
+              <!--Search-->
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <h1 class="h1 text-center my-3">Унесённые призраками</h1>
+        <p class="font-weight-light text-center my-4">Sen to Chihiro no kamikakushi</p>
+
+        <!--Init Body-->
+        <section id="body" class="container-fluid my-2">
+            <div class="row">
+                <div class="col-lg-9 border d-flex justify-content-center video">
+                    <video id="vid" class="my-5" width="860" controls>
+                        <source src="mainVid.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-lg-3 border d-flex align-items-start lite-description">
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>Год</td>
+                            <td>2001</td>
+                          </tr>
+                          <tr>
+                            <td>Страна</td>
+                            <td>Япония</td>
+                          </tr>
+                          <tr>
+                            <td>Режиссер</td>
+                            <td>Хаяо Миядзаки</td>
+                          </tr>
+                          <tr>
+                            <td>Сборы в мире</td>
+                            <td>$274 925 095</td>
+                          </tr>
+                          <tr>
+                            <td>Бюджет</td>
+                            <td>$19 000 000</td>
+                          </tr>
+                          <tr>
+                            <td>Время</td>
+                            <td><i class="far fa-clock"></i> 125 мин. / 02:05</td>
+                          </tr>
+                          <tr>
+                            <td><button id="mainBtn" type="button" class="btn btn-secondary">Read More</button></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!--Body 1-->
+        <section id="body1" class="container-fluid my-2">
+            <div id="body1_height" class="row">
+                <div class="col-lg-4 border d-flex justify-content-center video1">
+                    <div class="card m-5" style="width: 18rem;">
+                        <img src="card_title.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Унесённые Призраками</h5>
+                          <p class="card-text">Оригинальное название фильма переводится как «Сэн и таинственное исчезновение Тихиро».</p>
+                          <a href="#" id="cardBtn" class="btn btn-primary">Продолжить просмотр</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-8 border lite-description1">
+                    <h2 class="text-center">Описание</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc lobortis mattis aliquam faucibus purus. A scelerisque purus semper eget duis. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Vivamus arcu felis bibendum ut tristique et egestas. Gravida cum sociis natoque penatibus et magnis. Dignissim sodales ut eu sem integer vitae justo eget.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id interdum velit laoreet id donec ultrices tincidunt arcu non. Odio morbi quis commodo odio aenean sed adipiscing diam. Augue interdum velit euismod in pellentesque massa placerat duis. Tincidunt arcu non sodales neque sodales ut etiam. Viverra nam libero justo laoreet.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Cursus turpis massa tincidunt dui ut. Diam maecenas ultricies mi eget mauris. Tortor aliquam nulla facilisi cras.</p>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- Footer -->
+    <footer id="body" class="footer">
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-left pt-2">
+                    <p id="footercolor">  
+                        Copyright 2020 <i class="far fa-copyright"></i> <i class="fab fa-bootstrap"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
